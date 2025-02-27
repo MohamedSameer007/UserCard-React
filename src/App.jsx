@@ -1,35 +1,114 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import PropTypes from "prop-types"
+const userData = [
+    {
+        name:"Maradona",
+        city:"Argentina",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:false,
+        profile:"Maradona.avif"
+    },
+    {
+        name:"Lamine Yamal",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:true,
+        profile:"lamine yamal.jpg"
+    },
+    {
+        name:"Lamine Yamal",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:false,
+        profile:"lamine yamal.jpg"
+    },
+    {
+        name:"Lamine Yamal",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:false,
+        profile:"lamine yamal.jpg"
+    },
+    {
+        name:"Lamine Yamal",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:false,
+        profile:"lamine yamal.jpg"
+    }
+    ,
+    {
+        name:"Sergio Ramos",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:false,
+        profile:"Sergio Ramos.avif"
+    },
+    {
+        name:"Ronaldinho",
+        city:"Brazil",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:true,
+        profile:"Ronaldinho.jpg"
+    }
+]
+function User(props){
+    return (
+        <div className="card-container">
+            <span className={props.online ? "pro online" : "pro offline"}>{props.online ? "ONLINE" : "OFFLINE"}</span>
+            <img src={props.profile} className="img" />
+            <h3>{props.name}</h3>
+            <h3>{props.city}</h3>
+            <p>{props.description}</p>
+            <div className="buttons">
+                <button className="primary">Message</button>
+                <button className="primary outline">Following</button>
+            </div>
+            <div className="skills">
+                <h6>Skills</h6>
+                <ul>
+                    {props.skills.map((skill, index) => (<li key={index}>{skill}</li>))}
+                </ul>
+            </div>
+        </div>
+    )
+}
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    {userData.map((user, index) => (
+        <User key={index}
+        name={user.name}
+        city={user.city}
+        description={user.description}
+        online={user.online}
+        profile={user.profile}
+        skills={user.skills}
+        />
+    ))}
     </>
   )
 }
+
+User.propTypes = {
+    name:PropTypes.string.isRequired,
+    city:PropTypes.string.isRequired,
+    description:PropTypes.string.isRequired,
+    skills:PropTypes.arrayOf(PropTypes.string).isRequired,
+    online:PropTypes.bool.isRequired,
+    profile:PropTypes.string.isRequired,
+}
+
+
+
+{/* <User name="Maradona" city="Argentina" description="front-end developer" skills={["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"]} online={true} profile="Maradona.avif" /> */}
 
 export default App
