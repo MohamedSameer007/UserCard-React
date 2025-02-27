@@ -108,7 +108,6 @@ User.propTypes = {
 }
 
 
-
 {/* <User name="Maradona" city="Argentina" description="front-end developer" skills={["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"]} online={true} profile="Maradona.avif" /> */}
 
 export default App
