@@ -6,7 +6,7 @@ const userData = [
         description:"front-end developer",
         skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
         online:false,
-        profile:"Maradona.avif "
+        profile:"/Maradona.avif "
     },
     {
         name:"Lamine Yamal",
@@ -14,7 +14,7 @@ const userData = [
         description:"front-end developer",
         skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
         online:true,
-        profile:"lamine yamal.jpg"
+        profile:"/lamine yamal.jpg"
     },
     {
         name:"Lamine Yamal",
@@ -22,7 +22,7 @@ const userData = [
         description:"front-end developer",
         skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
         online:false,
-        profile:"lamine yamal.jpg"
+        profile:"/lamine yamal.jpg"
     },
     {
         name:"Lamine Yamal",
@@ -30,7 +30,7 @@ const userData = [
         description:"front-end developer",
         skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
         online:false,
-        profile:"lamine yamal.jpg"
+        profile:"/lamine yamal.jpg"
     },
     {
         name:"Lamine Yamal",
@@ -38,7 +38,7 @@ const userData = [
         description:"front-end developer",
         skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
         online:false,
-        profile:"lamine yamal.jpg"
+        profile:"/lamine yamal.jpg"
     }
     ,
     {
@@ -47,7 +47,7 @@ const userData = [
         description:"front-end developer",
         skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
         online:false,
-        profile:"Sergio Ramos.avif"
+        profile:"/Sergio Ramos.avif"
     },
     {
         name:"Ronaldinho",
@@ -55,7 +55,7 @@ const userData = [
         description:"front-end developer",
         skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
         online:true,
-        profile:"Ronaldinho.jpg"
+        profile:"/Ronaldinho.jpg"
     }
 ]
 function User(props){
