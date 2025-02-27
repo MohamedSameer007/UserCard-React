@@ -1,5 +1,4 @@
 import './App.css'
-import PropTypes from "prop-types"
 const userData = [
     {
         name:"Maradona",
@@ -96,15 +95,6 @@ function App() {
     ))}
     </>
   )
-}
-
-User.propTypes = {
-    name:PropTypes.string.isRequired,
-    city:PropTypes.string.isRequired,
-    description:PropTypes.string.isRequired,
-    skills:PropTypes.arrayOf(PropTypes.string).isRequired,
-    online:PropTypes.bool.isRequired,
-    profile:PropTypes.string.isRequired,
 }
 
 
