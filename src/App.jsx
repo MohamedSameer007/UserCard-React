@@ -56,6 +56,55 @@ const userData = [
         skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
         online:true,
         profile:"/Ronaldinho.jpg"
+    },
+    {
+        name:"Lamine Yamal",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:true,
+        profile:"/lamine yamal.jpg"
+    },
+    {
+        name:"Lamine Yamal",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:false,
+        profile:"/lamine yamal.jpg"
+    },
+    {
+        name:"Lamine Yamal",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:false,
+        profile:"/lamine yamal.jpg"
+    },
+    {
+        name:"Lamine Yamal",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:false,
+        profile:"/lamine yamal.jpg"
+    }
+    ,
+    {
+        name:"Sergio Ramos",
+        city:"Spanish",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:false,
+        profile:"/Sergio Ramos.avif"
+    },
+    {
+        name:"Ronaldinho",
+        city:"Brazil",
+        description:"front-end developer",
+        skills:["UI / UX", "front-end developer", "HTML", "CSS", "Javascript", "React JS", "Node"],
+        online:true,
+        profile:"/Ronaldinho.jpg"
     }
 ]
 function User(props){
