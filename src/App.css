@@ -2,11 +2,14 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: "Poppins", serif;
 }
 #root{
+    background-color: #222f3e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,9 +17,11 @@ body{
     flex-wrap: wrap;
     min-height: 100vh;
     margin: 0;
+    padding: 30px;
 }
 h3{
     margin: 10px 0;
+    color: rgb(238, 202, 3);
 }
 h6{
     margin: 5px 0;
@@ -37,6 +42,7 @@ p{
     max-width: 100%;
     text-align: center;
     position: relative;
+    cursor: pointer;
 }
 
 .pro{
@@ -53,7 +59,7 @@ p{
 .img{
     width: 170px;
     height: 150px;
-    border: 3px solid #fff;
+    border: 3px solid gold;
     padding: 7px;
     border-radius: 50%;
 }
@@ -68,12 +74,13 @@ p{
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin: 9px 0;
 }
 button.primary{
-    background-color: #0984e3;
-    border: 1px solid #0984e3;
+    background-color: gold;
+    border: 1px solid gold;
     border-radius: 3px;
-    color: #fff;
+    color: black;
     font-family: "Poppins", serif;
     font-weight: 500;
     padding: 10px 25px;
@@ -93,7 +100,7 @@ button.primary.outline{
     padding: 0;
 }
 .skills ul li {
-    border: 1px solid #595180;
+    border: 1px solid gold;
     display: inline-block;
     border-radius: 2px;
     padding: 7px;
